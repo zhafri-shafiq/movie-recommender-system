@@ -22,6 +22,13 @@ public class MovieRecommenderSystemApplication {
 
         System.out.println(recommender);
 
+        //Retrieving prototype bean from application context twice
+        Movie m1 = applicationContext.getBean(Movie.class);
+        System.out.println(m1);
+
+        Movie m2 = applicationContext.getBean(Movie.class);
+        System.out.println(m2);
+
         String[] result = recommender.recommendMovies("Finding Dory");
 
         System.out.println();
