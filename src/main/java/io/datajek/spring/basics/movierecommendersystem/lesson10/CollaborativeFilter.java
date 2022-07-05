@@ -1,4 +1,4 @@
-package io.datajek.spring.basics.movierecommendersystem.lesson9;
+package io.datajek.spring.basics.movierecommendersystem.lesson10;
 
 import org.springframework.beans.factory.config.ConfigurableBeanFactory;
 import org.springframework.context.annotation.Scope;
