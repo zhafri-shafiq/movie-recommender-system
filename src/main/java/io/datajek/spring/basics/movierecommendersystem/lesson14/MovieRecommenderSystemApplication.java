@@ -25,15 +25,17 @@ public class MovieRecommenderSystemApplication {
 
         //use ApplicationContext to find which filter is being used
         RecommenderImplementation recommender = applicationContext.getBean(
-                "recommenderImplementation",
+                "recommenderImpl",
                 RecommenderImplementation.class
         );
 
-        //call method to get recommendations
-        String[] result = recommender.recommendMovies("Finding Dory");
+        System.out.println("\nDependency: "+recommender.getFilter());
 
-        //display results
-        System.out.println(Arrays.toString(result));
+        //call method to get recommendations
+//        String[] result = recommender.recommendMovies("Finding Dory");
+//
+//        //display results
+//        System.out.println(Arrays.toString(result));
 
         applicationContext.close();
     }

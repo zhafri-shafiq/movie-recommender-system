@@ -6,10 +6,15 @@ import org.springframework.stereotype.Component;
 
 public class RecommenderImplementation {
 
+    @Autowired
     //use filter interface to select filter
     private Filter filter;
 
-    public RecommenderImplementation(Filter filter) {
+    public Filter getFilter() {
+        return filter;
+    }
+
+    public void setFilter(Filter filter) {
         this.filter = filter;
     }
 
